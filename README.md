@@ -108,14 +108,14 @@ Access the application:
 
 ```
 travel-planner/
-├── frontend/                 # React frontend
+├── frontend/                 
 │   ├── src/
-│   │   ├── components/       # Reusable UI components
-│   │   ├── utils/            # Utility functions
-│   │   ├── App.jsx           # Main application component
-│   │   └── index.css         # Tailwind CSS and custom styles
-├── backend/                  # Node.js backend
-│   ├── services/             # API and AI service modules
-│   ├── server.js             # Express server entry point
+│   │   ├── components/       
+│   │   ├── utils/            
+│   │   ├── App.jsx           
+│   │   └── index.css         
+├── backend/                 
+│   ├── services/             
+│   ├── server.js            
 └── README.md
 ```
