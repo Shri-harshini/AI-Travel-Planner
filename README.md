@@ -81,7 +81,7 @@ Create environment variables for the backend in a `.env` file:
 PORT=3001
 CORS_ORIGIN=http://localhost:5173
 
-# AI API Keys (optional — falls back to mock responses if not provided)
+
 OPENAI_API_KEY=your_openai_key
 GEMINI_API_KEY=your_gemini_key
 CLAUDE_API_KEY=your_claude_key
