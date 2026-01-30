@@ -1,103 +1,121 @@
-# 🌍 AI-Powered Travel Planner
+# AI-Powered Travel Planner
 
-A beautiful, production-ready travel planning application that generates personalized, day-wise travel itineraries using AI. Built with React, Node.js, and featuring an elegant, mild-color UI design.
+The **AI-Powered Travel Planner** is a production-ready travel planning application that generates personalized, day-wise itineraries using artificial intelligence. The system is designed to deliver structured, budget-aware travel plans through a clean, modern, and responsive user interface.
 
-## ✨ Features
+This project demonstrates the integration of AI-driven planning logic with a full-stack web application, suitable for real-world use cases.
 
-- 🤖 **AI-Powered Itineraries**: Smart travel plans based on your preferences
-- 💰 **Budget-Conscious**: Plans optimized for Indian Rupee (INR) budgets
-- 🎨 **Elegant UI**: Soft, calm color palette with glassmorphism effects
-- 📱 **Responsive Design**: Works seamlessly on all devices
-- 🌤️ **Weather Integration**: Real-time weather information for destinations
-- 💱 **Currency Conversion**: Multi-currency support with INR as base
-- 📄 **PDF Export**: Download your itinerary as a PDF document
-- 🔄 **Regeneration**: Generate new itineraries with the same preferences
+---
 
-## 🛠️ Tech Stack
+## Features
+
+* AI-generated, personalized travel itineraries based on user preferences
+* Budget-aware planning with optimization for Indian Rupee (INR)
+* Clean and elegant user interface with a mild color palette and glassmorphism design
+* Fully responsive layout compatible with all device sizes
+* Real-time weather information for selected destinations
+* Multi-currency support with INR as the base currency
+* Export generated itineraries as downloadable PDF documents
+* Itinerary regeneration using the same user preferences
+
+---
+
+## Tech Stack
 
 ### Frontend
-- **React 18** with Vite
-- **Tailwind CSS** with custom mild color palette
-- **Glassmorphism UI** components
-- **jsPDF** for PDF generation
-- **Axios** for API calls
+
+* React 18 (Vite)
+* Tailwind CSS with a custom mild color palette
+* Glassmorphism-based UI components
+* jsPDF for PDF generation
+* Axios for API communication
 
 ### Backend
-- **Node.js** with Express
-- **CORS** enabled for cross-origin requests
-- **Environment variables** for security
-- **Modular service architecture**
+
+* Node.js with Express
+* CORS enabled for secure cross-origin requests
+* Environment variables for configuration and security
+* Modular service-based architecture
 
 ### AI Integration
-- **Multiple AI providers** supported (OpenAI, Gemini, Claude)
-- **Fallback mock responses** for development
-- **Structured JSON output** for consistency
+
+* Support for multiple AI providers (OpenAI, Gemini, Claude)
+* Mock response fallback for development environments
+* Structured JSON-based AI outputs for consistency
 
 ### External APIs
-- **Weather API** (Open-Meteo Geocoding & Weather - Free)
-- **Currency API** (ExchangeRate-API - Free)
 
-## 🚀 Quick Start
+* Weather API: Open-Meteo Geocoding & Weather
+* Currency API: ExchangeRate-API
+
+---
+
+## Quick Start
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+
+* Node.js (v16 or higher)
+* npm or yarn
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Shri-harshini/AI-Travel-Planner.git
-   cd AI-Travel-Planner
-   ```
+Clone the repository:
 
-2. **Install all dependencies**
-   ```bash
-   npm run install-all
-   ```
+```bash
+git clone https://github.com/Shri-harshini/AI-Travel-Planner.git
+cd AI-Travel-Planner
+```
 
-3. **Set up environment variables**
+Install all dependencies:
 
-   **Backend (.env)**:
-   ```env
-   PORT=3001
-   CORS_ORIGIN=http://localhost:5173
-   
-   # AI API Keys (Optional, fallback to mock if missing)
-   OPENAI_API_KEY=your_openai_key
-   GEMINI_API_KEY=your_gemini_key
-   CLAUDE_API_KEY=your_claude_key
-   ```
+```bash
+npm run install-all
+```
 
-4. **Start the development servers**
-   ```bash
-   npm run dev
-   ```
+---
 
-5. **Open your browser**
-   - Frontend: http://localhost:5173
-   - Backend API: http://localhost:3001/api/health
+## Environment Configuration
 
-## 📁 Project Structure
+Create environment variables for the backend in a `.env` file:
+
+```env
+PORT=3001
+CORS_ORIGIN=http://localhost:5173
+
+# AI API Keys (optional — falls back to mock responses if not provided)
+OPENAI_API_KEY=your_openai_key
+GEMINI_API_KEY=your_gemini_key
+CLAUDE_API_KEY=your_claude_key
+```
+
+---
+
+## Running the Application
+
+Start the development servers:
+
+```bash
+npm run dev
+```
+
+Access the application:
+
+* Frontend: [http://localhost:5173](http://localhost:5173)
+* Backend API Health Check: [http://localhost:3001/api/health](http://localhost:3001/api/health)
+
+---
+
+## Project Structure
 
 ```
 travel-planner/
 ├── frontend/                 # React frontend
 │   ├── src/
-│   │   ├── components/       # React components
+│   │   ├── components/       # Reusable UI components
 │   │   ├── utils/            # Utility functions
-│   │   ├── App.jsx           # Main app component
-│   │   └── index.css         # Tailwind + custom styles
+│   │   ├── App.jsx           # Main application component
+│   │   └── index.css         # Tailwind CSS and custom styles
 ├── backend/                  # Node.js backend
-│   ├── services/            # API services
-│   ├── server.js            # Express server
+│   ├── services/             # API and AI service modules
+│   ├── server.js             # Express server entry point
 └── README.md
 ```
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-**Built with ❤️ for travelers who love smart, budget-friendly planning**
